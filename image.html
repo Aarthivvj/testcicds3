@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Madras Seva Sadan</title>
+
+    <link rel="stylesheet" href="./css/mss.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+    <style>
+      .waviy {
+        position: relative;
+      }
+      .waviy span {
+        position: relative;
+        display: inline-block;
+        font-family: 'Lora';
+        font-size: 40px;
+        color: #9351E8;
+        text-transform: uppercase;
+        animation: flip 4s infinite;
+        animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    color: #FFF;
+    transform: rotateY(360deg) 
+  }
+}
+    </style>
+</head>
+<body>
+
+<!-- ==================== Start Loading ==================== -->
+     <div id="loading" class="loading-container">
+      <div class="flex_center height100">
+        <div class="waviy text-center">
+          <span style="--i:1">T</span>
+          <span style="--i:2">H</span>
+          <span style="--i:3; margin-right:5px;">E</span>
+          <span style="--i:4">M</span>
+          <span style="--i:5">A</span>
+          <span style="--i:6">D</span>
+          <span style="--i:7">R</span>
+          <span style="--i:8">A</span>
+          <span style="--i:9; margin-right:5px;">S</span>
+          <span style="--i:10">S</span>
+          <span style="--i:11">E</span>
+          <span style="--i:12">V</span>
+          <span style="--i:13; margin-right:5px;">A</span>
+          <span style="--i:14">S</span>
+          <span style="--i:15">A</span>
+          <span style="--i:16">D</span>
+          <span style="--i:17">A</span>
+          <span style="--i:18">N</span>
+       
+         </div>
+      </div>
+     </div>
+    <!-- ==================== End Loading ==================== -->
+
+     <!-- ==================== Start Loading ==================== -->
+    <!--  <div id="loading" class="loading-container">
+      <div class="flex_center height100">
+        <div class="waviy text-center">
+          <span style="--i:1">T</span>
+          <span style="--i:2">H</span>
+          <span style="--i:3; margin-right:5px;">E</span>
+          <span style="--i:4">M</span>
+          <span style="--i:5">A</span>
+          <span style="--i:6">D</span>
+          <span style="--i:7">R</span>
+          <span style="--i:8">A</span>
+          <span style="--i:9; margin-right:5px;">S</span>
+          <span style="--i:10">S</span>
+          <span style="--i:11">E</span>
+          <span style="--i:12">V</span>
+          <span style="--i:13; margin-right:5px;">A</span>
+          <span style="--i:14">S</span>
+          <span style="--i:15">A</span>
+          <span style="--i:16">D</span>
+          <span style="--i:17">A</span>
+          <span style="--i:18">N</span>
+       
+         </div>
+      </div>
+     </div> -->
+    <!-- ==================== End Loading ==================== -->
+
+
+    <!-- Main Container Start-->
+    
+    <section class="main_container"> 
+
+       <!-- ==================================== Random Image Start =============================== -->
+       <!-- <div class="rand"> 
+        <a id="something">
+            <img src="" class="img-fluid">
+        </a>
+      </div> -->
+      <div class="image-container">
+        <img src="" alt="Image" id="image">
+      </div>
+      <!-- ==================================== Random Image Start =============================== -->
+       <!-- ==================================== Nav Start =============================== --> 
+      <nav class="navbar navbar-dark home_menu">
+        <div class="container-fluid p-0">
+          <a href="index.html" class="home_logo">
+            <img src="./img/home/home-logo.png" alt="">
+          </a>
+            <a id="show-sidebar" class="" href="#">
+              <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+              </button>
+              </a>
+        </div>
+      </nav>
+      <div class="home_menu_wrapper" id="sidebar">
+        <div class="flex_center height100">
+          <ul>
+            <li>Home</li>
+            <li><a href="about.html">About Us</a></li>
+            <li>Our Commitments</li>
+            <li>Our Units</li>
+            <li>Key Initiatives</li>
+            <li>Events</li>
+            <li>News & Media</li>
+            <li>Be A Part</li>
+          </ul>
+        </div>
+      </div>
+       <!-- ==================================== Nav End =============================== -->
+      
+      
+    </section>
+    <!-- Main Container End -->
+    
+ 
+
+
+    <!-- ==================== Scrip Code ================================= -->
+    <script src="./js/mss.js"></script>
+
+    <script>
+ const imageArray = [
+ "./img/home/Highlights_Gif.gif",
+ "./img/home/Benefactors.jpg",
+ "./img/home/Concert_Hall.jpg",
+ "./img/home/CricketAcademy.jpg",
+ "./img/home/FoundersGif.gif",
+ "./img/home/HOC_Chetpet.jpg",
+ "./img/home/HOC_Tnagar.jpg",
+ "./img/home/Kritika.jpg",
+ "./img/home/LadyAndal_IB.jpg",
+ "./img/home/LadyAndal_School.jpg",
+ "./img/home/Milestone.jpg",
+ "./img/home/MSS_Chetpet.jpg",
+ "./img/home/MSS_Tbm.jpg",
+ "./img/home/Premakumar.jpg",
+ "./img/home/PremVihar.jpg",
+ "./img/home/PremVihar_ngo.jpg",
+ "./img/home/SirMutha_school.jpg",
+ "./img/home/sportscomplex.jpg",
+];
+var currentIndex = 0;
+
+    function updateImage(e) {
+      var image = document.getElementById('image');
+      var x = e.clientX;
+      var y = e.clientY;
+
+      // Example logic to determine the image based on mouse position
+      var index = Math.floor(x / (window.innerWidth / imageArray.length));
+      index = Math.max(0, Math.min(index, imageArray.length - 1));
+
+      if (currentIndex !== index) {
+        currentIndex = index;
+        console.log(currentIndex);
+        image.src = imageArray[currentIndex];
+      }
+    }
+
+    document.addEventListener('mousemove', updateImage);
+    console.log(updateImage);
+
+    </script>
+
+</body>
+</html>

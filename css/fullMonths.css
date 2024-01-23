@@ -1,0 +1,108 @@
+ /* Add some basic styling for the calendar */
+ .fullMonth_calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    overflow: auto;
+    padding: 25px 10px;
+  }
+  .fullMonth_calendar .month:nth-child(1){
+    background: #FFECEB;
+  }
+  .fullMonth_calendar .month:nth-child(2){
+    background: #DEFFFF;
+  }
+  .fullMonth_calendar .month:nth-child(3){
+    background: #FFFEE0;
+  }
+  .fullMonth_calendar .month:nth-child(4){
+    background: #F7F0FF;
+  }
+  .fullMonth_calendar .month:nth-child(5){
+    background: rgba(251, 200, 255, 0.10);
+  }
+  .fullMonth_calendar .month:nth-child(6){
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .fullMonth_calendar .month:nth-child(7){
+    background: #FFEECE;
+  }
+  .fullMonth_calendar .month:nth-child(8){
+    background: rgba(0, 255, 25, 0.10);
+  }
+  .fullMonth_calendar .month:nth-child(9){
+    background: #FFECEB;
+  }
+  .fullMonth_calendar .month:nth-child(10){
+    background: rgba(0, 0, 0, 0.05);
+  }
+  .fullMonth_calendar .month:nth-child(11){
+    background: #FFFEE0;
+  }
+  .fullMonth_calendar .month:nth-child(12){
+    background: #DEFFFF;
+  }
+  .month {
+    padding:20px  10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25);
+    
+  }
+  .calendar-table{
+    width: 100%;
+  }
+  .calendar-table tr:nth-child(1){
+    color: #9351E8;
+    font-family: 'Crimson Pro';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-transform: capitalize;
+  }
+  tbody td:hover:after, .selected:after{
+    background: #2a3246;
+  }
+  tbody td:after{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    width: 44px;
+    height: 44px;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 50%;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    z-index: -1;
+  }
+
+  .calendar-table tbody, td, tfoot, th, thead,tr{
+    padding: 10px 0;
+  }
+  .full_month_section{
+    text-align: center;
+  }
+  .full_month_section .select_fullYear{
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    border: none;
+  }
+  @media (max-width: 768px) {
+    .fullMonth_calendar{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }

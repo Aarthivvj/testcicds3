@@ -1,0 +1,76 @@
+.bgFull_img {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 480px;
+    position: relative;
+  }
+  .at_a_glance_img{
+    background-image: url(../img/at_a_glance/at_a_glance_img.png);
+  }
+  .bgFull_img_bg_color{
+    border-radius: 0px 0px 7px 7px;
+    background: linear-gradient(159deg, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    bottom: -35%;
+  }
+  .bgFull_img h4{
+    color: #fff;
+  }
+  .bgFull_img .video_sec{
+    position: relative;
+    top: -25%;
+  }
+  .popup_video{
+    display: none;
+  }
+  #open_video{
+    cursor: pointer;
+  }
+  #video_hide{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    z-index: 2;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+
+  /* Honorable General Secretary */
+  .general_speech{
+    background-image: url(../img/at_a_glance/general_speech.png);
+  }
+  .general_speech h3{
+    color: #000;
+    font-family: Perpetua Titling MT;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: start;
+    text-transform: uppercase;
+  }
+  .general_speech_img {
+    text-align: center;
+  }
+  .general_speech_img img{
+    width: 80%;
+  }
+  .speech_popup_video{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 13%;
+  }
+  #open_speech_video{
+    cursor: pointer;
+  }
+  #speech_video_hide{
+    position: absolute;
+    right: 0;
+    color: #fff;
+    z-index: 2;
+    padding: 10px 20px;
+    cursor: pointer;
+  }

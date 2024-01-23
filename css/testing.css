@@ -1,0 +1,54 @@
+.video-container {
+  position: relative;
+  width: 500px;
+}
+
+#controls-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#play-pause-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+}
+
+#progress-bar {
+  flex-grow: 1;
+  height: 5px;
+  background-color: white;
+  margin: 0 10px;
+}
+
+#progress {
+  height: 100%;
+  background-color: #428bca;
+}
+
+.icon {
+  display: inline-block;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+}
+
+.icon::before {
+  content: attr(data-icon);
+}
+
+.icon::after {
+  content: attr(data-icon);
+  font-size: 12px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+

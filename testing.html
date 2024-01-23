@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Madras Seva Sadan</title>
+
+    <link rel="shortcut icon" href="./img/top-header-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/mss.css">
+    <link rel="stylesheet" href="./css/testing.css">
+    <link rel="stylesheet" href="./css/hover_img.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/splide.min.css">
+    <link rel="stylesheet" href="./css/calender.css">
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en'
+        }, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <style>
+      canvas {
+          width: 100%;
+          border-radius: 10px;
+      }
+     /*  button {
+          outline :0;
+          border: none;
+          border-radius: 3px;
+          color: white;
+          background: black;
+          width: 100px;
+          height: 40px;
+          transition: all .1s ease-in-out;
+      } */
+   /*    button:hover {
+          background:  none;
+          border: 3px solid black;
+          color: black;
+      } */
+      #pdf-container {
+        width: 50%;
+  height: 500px; /* Custom height value */
+  overflow-y: scroll; /* Show vertical scrollbar */
+}
+  </style>
+</head>
+<body>
+
+   <!-- ==================== Header Section Start==================== --> 
+    <header>
+     <div class="top_header">
+      <div class="row w100 m-0">
+        <div class="col-6 p-0">
+          <div class="top-header-logo align_center">
+            <a href="index.html"><img src="./img/top-header-logo.svg" alt=""></a>
+            <h6>The Madras<br>Seva Sadan</h6>
+          </div>
+        </div>
+        <div class="col-6 justify_end p-0">
+          <div class="top-header-icon">
+            <div id="google_translate_element"></div>
+            <a href="#"><img src="./img/valunteer-icon.svg" alt="valunteer"></a>
+            <a href="#"><img src="./img/donate-icon.svg" alt="donate"></a>
+            <a href="#"><img src="./img/conect-icon.svg" alt="conect"></a>
+          </div>
+        </div>
+      </div>
+     </div>
+     <nav class="navbar navbar-expand-lg Page_navbar">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+    
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Commitments
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+    
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item dropdown active_menu">
+              <img class="nav_active_top_img" src="./img/nav_active_top_img.png" alt="">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Units
+              </a>
+              <img src="./img/nav_active_bottom_img.png" alt="">
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+    
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Key Initiatives
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+    
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Events
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+    
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                News &amp Media
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                  <li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+    
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Be a part</a>
+            </li>
+          </ul>
+          <form class="d-flex d-none" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    </header>
+    <!-- ==================== Header Section End==================== -->
+    <!-- Header Space -->
+    <div class="height100"></div>
+    <!--  -->
+    <!-- ==================== About US Page Start==================== -->
+
+     <!-- ==================== Start Main Container ==================== -->
+     <section class="main_container">  
+      <!-- Back to top button -->
+      <a id="button_main_sec">
+        <img src="./img/top_to_section.png" class="img-fluid" alt="">
+      </a>
+      <!-- Back to top button -->
+
+     <!-- ==================== Page Title Start==================== -->
+    
+     <div class="container page_title pt-50 container_space">
+        <img src="./img/page-title-top-bar.png" alt="" class="img-fluid title-bar">
+        <h2>Our Units</h2>
+        <img src="./img/page-title-bottom-bar.png" alt="" class="img-fluid title-bar">
+      </div>
+    <!-- ==================== Page Title End==================== --> 
+
+    <!-- ==================== Testing Code Start ==================== --> 
+    <div class="video-container">
+      <video id="video-player" controls>
+        <source src="img/1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="controls-container">
+        <button id="play-pause-button"><span class="icon">&#9658;</span></button>
+        <div id="progress-bar">
+          <div id="progress"></div>
+        </div>
+      </div>
+    </div>
+              
+    <!-- ==================== Testing Code End ==================== -->
+    
+     </section>
+     <div class="container section_title  pb-30">
+        <div class="flex_center">
+         <img src="./img/page-end_bar.png" class="img-fluid" alt="">
+        </div>
+      </div>
+<!-- ==================== End Main Container ==================== -->
+
+    <!-- ==================== Footer Start ==================== -->
+    <footer>
+        <div class="footer_bg">
+        <div class="footer_section">
+          <div class="col-12 col-lg-2">
+            <h5>Menus</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="">Ourt Commitments</a></li>
+              <li><a href="">Our Units</a></li>
+              <li><a href="">Key Initiatives</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">New &amp; Media</a></li>
+              <li><a href="">Be a Part</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="flex_center">
+              <div class="text-center">
+                <img src="./img/footer_logo.png" alt="">
+              <h1>The Madras Seva Sadan</h1>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-2">
+            <h5>Location</h5>
+            <ul>
+              <li><a href="index.html">Mss Central</a></li>
+              <li><a href="about.html">LA House Of Children</a></li>
+              <li><a href="">Prem Vihar</a></li>
+              <li><a href="">Lady Andal IB</a></li>
+              <li><a href="">NIOS</a></li>
+              <li><a href="">Orca</a></li>
+              <li><a href="">SMVRCH</a></li>
+              <li><a href="">School of Sound 
+                and Music</a></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="sub_footer_bg">
+        <div class="flex_center sub_footer">
+          <div class="col-lg-6">
+            <p>Copyright © 2023 - All Rights Reserved<br>
+              MADRAS SEVA SADAN</p>
+              <div class="footer_icons">
+                <img src="./img/email.svg" alt="">
+                <img src="./img/fb.svg" alt="">
+                <img src="./img/website.svg" alt="">
+              </div>
+          </div>
+          <div class="col-lg-6 text-end">
+            <p>Design &amp; Developed By <br>
+              MVG Digital
+            </p>
+              <div class="footer_icons footer_icons-right">
+                <img src="./img/email.svg" alt="">
+                <img src="./img/fb.svg" alt="">
+                <img src="./img/website.svg" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+      </footer>
+      <!-- ==================== Footer End   ==================== -->
+  
+  
+      <!-- ==================== Plugin Files ================================= -->
+      <script src="./js/jquery.min.js"></script>
+      
+
+      <!-- ///////////////// PDF Viewer  ///////////////////////// -->
+      
+  
+      <!-- ==================== Scrip Files ================================= -->
+     <!--  <script src="./js/mss.js"></script> -->
+      <script src="./js/testing.js"></script>
+
+
+    <script>
+
+
+
+    /////////////////////// Slider Code Start /////////////
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,4350 @@
+@font-face {
+  font-family: 'Lora';
+  src: url('../fonts/Lora-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Lora-italic';
+  src: url('../fonts/Lora-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Perpetua Titling MT';
+  src: url('../fonts/PERTIBD.TTF');
+}
+
+@font-face {
+  font-family: 'Old Standard TT';
+  src: url('../fonts/OldStandardTT-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Old Standard TT Italic';
+  src: url('../fonts/OldStandardTT-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Crimson Pro';
+  src: url('../fonts/CrimsonPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OCR-B 10 BT';
+  src: url('../fonts/OCR-B-10-BT.ttf');
+}
+
+
+.w100 {
+  width: 100%;
+}
+.height100vh{
+  height: 100vh;
+}
+.pt12 {
+  padding-top: 12%;
+}
+
+.p-8 {
+  padding: 8px !important;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p_12 {
+  padding: 12px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.ptb_25 {
+  padding: 25px 0;
+}
+
+.ptb_30 {
+  padding: 30px 12px;
+}
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+.p50{
+  padding: 50px;
+}
+.pb-50 {
+  padding-bottom: 50px;
+}
+.pt-50 {
+  padding-top: 50px !important;
+}
+.ptb_50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.p60 {
+  padding: 60px;
+}
+
+.ptb_60 {
+  padding: 60px 0;
+}
+
+.pt_150 {
+  padding-top: 150px;
+}
+
+.mt50 {
+  margin-top: 5% !important;
+}
+
+.mt2 {
+  margin-top: 2% !important;
+}
+
+.mt3 {
+  margin-top: 3% !important;
+}
+
+.mt5 {
+  margin-top: 5% !important;
+}
+.txt-white{
+  color: #fff;
+}
+.glace_bg{
+  background: rgba(217, 217, 217, 0.10);
+  backdrop-filter: blur(20px);
+}
+.pastle_green h4{
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  text-transform: uppercase;
+  color: #4F646F;
+  margin: 0 8px; 
+}
+.bg_images {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 480px;
+}
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center_content {
+  display: flex;
+  justify-content: center;
+}
+
+.mob_flex_center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.justify_end {
+  display: flex;
+  justify-content: end;
+}
+
+.justify_spc_between {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.align_center {
+  display: flex;
+  align-items: center;
+}
+
+select:focus-visible {
+  outline: none;
+}
+
+.pos_rel {
+  position: relative;
+}
+
+.pos_abs {
+  position: absolute;
+}
+
+p {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+
+}
+
+a {
+  color: #FFF !important;
+  text-decoration: none !important;
+  font-family: 'Crimson Pro' !important;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+ul li {
+  list-style: none;
+}
+
+.sec_center_txt {
+  text-align: center;
+}
+
+/* ====================== [ Start Preloader ] ====================== */
+/*  */
+.loading-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  background-image: url(../img/Loader.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ====================== [ End Preloader ] ====================== */
+
+/* ========================  Color Changing Code ======================== */
+.palette-container {
+  position: relative;
+}
+
+.fa-palette {
+  font-size: 30px;
+  color: #111;
+  transition: all 0.2s;
+}
+
+.palette-container:hover .fa-palette {
+  color: #fff;
+}
+
+.plaette-colors {
+  position: fixed;
+  right: 3%;
+  background-color: var(--color);
+  list-style: none;
+  padding: 10px;
+  display: none;
+}
+
+.colors {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+:root {
+  --color: #0984e3;
+}
+
+#blue {
+  background-color: #0984e3;
+}
+
+#yellow {
+  background-color: #f1c40f;
+}
+
+#purple {
+  background-color: #6c5ce7;
+}
+
+#green {
+  background-color: #27ae60;
+}
+
+/* End */
+
+.height100 {
+  height: 100px;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+.top_header {
+  padding: 5px 50px;
+  background: #000;
+}
+
+.top-header-logo img {
+  margin-right: 10px;
+}
+
+.top-header-logo h6 {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #FFFFFF;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.top-header-icon {
+  display: flex;
+  align-items: center;
+}
+
+.be_a_part_btn {
+  background: transparent;
+  border: 2px solid #D0B6F7;
+  padding: 2px 13px;
+  border-radius: 3px;
+  color: #fff;
+  line-height: 18px;
+  font-size: 16px;
+  font-family: 'Crimson Pro';
+}
+
+.be_a_part_btn:hover {
+  background: #D0B6F7;
+  border: 2px solid #D0B6F7;
+  color: #000;
+}
+
+.top-header-icon span {
+  display: none;
+}
+
+.top-header-icon img {
+  margin: 0 25px;
+}
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none;
+}
+
+.top-header-icon .goog-te-combo {
+  background: #000;
+  color: #fff;
+  border: none;
+}
+
+.Page_navbar {
+  height: 55px;
+  padding: 0px 50px !important;
+  background: #D0B6F7;
+  /* background: var(--color); */
+  /* background: linear-gradient(180deg, #9351E8 0%, #35007A 100%); */
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.navbar-brand img {
+  width: 80px;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #000 !important;
+  font-family: 'Crimson Pro';
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0px 8px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  padding: 0px 8px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.nav_active_top_img {
+  margin-bottom: 6px;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* ==================== Header Section Start============================== */
+  .navbar-brand img {
+    width: 80px;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+    padding: 0 1em;
+  }
+
+
+  /* ==================== About Menu Start ================================= */
+  .navbar-brand {
+    font-size: 1.4em;
+  }
+
+  .navbar-dark .navbar-nav a.nav-link {
+    color: #ffffff;
+  }
+
+  .dropdown-menu {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: none;
+    border-radius: 0;
+    padding: 0.7em;
+    top: 40px;
+  }
+
+  .active_menu .dropdown-menu {
+    top: auto;
+  }
+
+  @media only screen and (min-width: 992px) {
+    .dropdown:hover .dropdown-menu {
+      display: flex;
+    }
+
+    .dropdown-menu.show {
+      display: flex;
+    }
+  }
+
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .dropdown-menu li .dropdown-item {
+    padding: 0.5em 1em;
+  }
+
+  .dropdown-menu li .dropdown-item:hover {
+    color: #9351E8 !important;
+    background-color: transparent !important;
+  }
+
+  .dropdown-menu li:first-child a:hover {
+    color: #9351E8 !important;
+    background-color: transparent !important;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .dropdown-menu.show {
+      flex-wrap: wrap;
+      max-height: 350px;
+      overflow-y: scroll;
+    }
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1140px) {
+    .dropdown:hover .dropdown-menu {
+      width: 40vw;
+      flex-wrap: wrap;
+    }
+  }
+
+  .dropdown-menu {
+    border-radius: 0;
+    border: none;
+    padding: 0.5em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .dropdown-menu li a {
+    color: gray;
+    padding: 0.5em 1em;
+  }
+
+  @media screen and (min-width: 993px) {
+    .dropdown:hover .dropdown-menu {
+      display: flex;
+    }
+
+    .dropdown-menu.show {
+      display: flex;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .dropdown-menu.show {
+      max-height: 60vh;
+      overflow-y: scroll;
+    }
+
+    .premvihar_border_color {
+      bottom: 2% !important;
+      height: 160px;
+    }
+  }
+
+  /* ==================== About Menu Start ================================= */
+  /* ==================== Header Section End============================== */
+}
+
+.main_container,
+.footer_section {
+  max-width: 1920px;
+  margin: auto;
+}
+
+/* Home Page */
+#something img {
+  width: 100%;
+  height: 100vh;
+}
+
+.home_menu {
+  display: flex;
+  position: absolute !important;
+  top: 45px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px 50px;
+  background: transparent;
+  z-index: 99;
+}
+
+.home_menu .home_logo {
+  padding: 7px;
+  background: #9351E8;
+}
+
+.home_menu img {
+  width: 40px;
+}
+
+#sidebar {
+  display: none;
+}
+
+.height100vh {
+  height: 100vh;
+}
+
+.home_menu_wrapper {
+  position: absolute !important;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #9351E8;
+}
+
+/*  */
+#app {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5% 0 0;
+}
+
+/**
+   * ANIMATION - FLIP
+   */
+.home_menu_wrapper ul {
+  padding: 0;
+  margin: 0;
+}
+
+.home_menu_wrapper ul li {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  list-style-type: none;
+  transition: font-size .5s;
+}
+
+.home_menu_wrapper ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home_menu_wrapper ul li:hover {
+  font-size: 48px;
+}
+
+/*  */
+/* Side Menu Code Here */
+@keyframes swing {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(10deg);
+  }
+
+  30% {
+    transform: rotate(0deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes sonar {
+  0% {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.page-wrapper .sidebar-wrapper,
+.sidebar-wrapper .sidebar-brand>a,
+.sidebar-wrapper .sidebar-dropdown>a:after,
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before,
+.sidebar-wrapper ul li a i,
+.page-wrapper .page-content,
+.sidebar-wrapper .sidebar-search input.search-menu,
+.sidebar-wrapper .sidebar-search .input-group-text,
+.sidebar-wrapper .sidebar-menu ul li a,
+#show-sidebar,
+#close-sidebar {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*----------------page-wrapper----------------*/
+
+/* .page-wrapper {
+  height: 100vh;
+} */
+
+.page-wrapper .theme {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+.page-wrapper .theme.chiller-theme {
+  background: #1e2229;
+}
+
+/*----------------toggeled sidebar----------------*/
+
+@media screen and (max-width: 768px) {
+
+  /* .page-wrapper.toggled .page-content {
+    padding-right: 300px;
+  } */
+  .home_menu {
+    top: 10px;
+    padding: 5px 20px;
+  }
+}
+
+/*----------------show sidebar button----------------*/
+#show-sidebar {
+  border-radius: 0 4px 4px 0px;
+  transition-delay: 0.3s;
+  background: transparent;
+  border: none;
+}
+
+#show-sidebar:focus-visible {
+  outline: none;
+}
+
+.page-wrapper.toggled #show-sidebar {
+  left: -40px;
+}
+
+/*----------------sidebar-wrapper----------------*/
+/* Menu icon */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  background: #9351E8;
+}
+
+.line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* New Header Image Code Here */
+.header_cercle_img_sec {
+  justify-content: center !important;
+}
+
+.header_cercle_img {
+  display: flex !important;
+  justify-content: center;
+  position: absolute;
+  background: #D0B6F7;
+  height: 90px;
+  width: 95px;
+  border-radius: 50%;
+  top: 0;
+  transform: translate(-50px, -17px);
+  cursor: pointer;
+}
+
+.header_cercle_img img {
+  position: absolute;
+  top: 10px;
+  opacity: 0;
+  animation: hide-show 5s infinite;
+}
+
+@keyframes hide-show {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.header_cercle_img img:nth-child(2) {
+  animation-delay: 2.5s;
+  /* Delay the animation for the second image */
+}
+
+.progress-container {
+  background-color: #F5F5F5;
+  height: 7px;
+  width: 100%;
+}
+
+.progress-bar {
+  background: linear-gradient(180deg, #9351E8 0%, #35007A 99.99%, rgba(147, 81, 232, 0) 100%);
+  height: 7px;
+  width: 0%;
+}
+
+/*  */
+/*  */
+/* ==================== About US Page Start============================== */
+.banner_img {
+  height: 480px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background: url('../img/aboutPage/banner_black_bg.png');
+}
+
+.detail_page_banner_img {
+  height: 480px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.premvihar_banner {
+  background: url('../img/premVihar/premvihar_banner.png');
+}
+
+.banner_img h1 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 77px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.abt_mss_bg {
+  background-image: url("../img/aboutPage/about_mss_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 30% auto;
+}
+.founder_banner_title{
+  color: #fff;
+}
+.founder_banner_title h1 {
+  margin-left: 42%;
+}
+
+.founder_txt h6 {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.founder_txt p {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.medel_icon_sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.medal_icons {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.founder_name p {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.founder_detail_txt p {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.02em;
+}
+
+.founder_detail_txt .bld_txt {
+  font-weight: bold;
+}
+
+.founder_detail_txt span {
+  font-weight: normal;
+}
+
+.medal_icons p {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.first_one p::first-letter {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.container_space {
+  /* background: url('../img/page-img.jpg') no-repeat fixed center; */
+ padding-left: 50px;
+ padding-right: 50px;
+}
+
+.page_title {
+  text-align: center;
+}
+
+.page_title .title-bar {
+  width: 30%;
+}
+
+.page_title h2 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 61px;
+  color: #420039;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.page_title h4 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 8px;
+}
+
+.our_journey {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.img_sec {
+  text-align: center;
+}
+
+.founder_frame {
+  width: 65%;
+  margin: auto;
+}
+
+.content_sec h5 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.content_sec h6 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+}
+
+.content_sec p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.txt_italic {
+  font-family: 'Lora-italic' !important;
+}
+
+.str_letter {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 16px;
+  margin-right: 1px;
+  color: #000000;
+}
+
+.str_letter_t {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 16px;
+  margin-right: -6px;
+  color: #000000;
+}
+
+.more_detail {
+  text-decoration: none;
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #9351e8 !important;
+}
+
+.sec_more_btn {
+  text-align: end;
+}
+
+.sec_more_btn_left {
+  text-align: start;
+}
+
+.tmss_card .more_detail {
+  color: #FFF !important;
+}
+
+.more_detail:hover {
+  color: #9351e8 !important;
+}
+
+/* Back To Top Section */
+#button_main_sec {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 4%;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#button_main_sec.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#Back_button {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  top: 30%;
+  left: 3%;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.edit-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  right: 4%;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  z-index: 1000;
+  cursor: pointer;
+  display: none;
+}
+
+.edit-icon img {
+  width: 100%;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+}
+
+@media (max-width: 500px) {
+  .premvihar_border_color {
+    height: 150px;
+    bottom: 3% !important;
+  }
+}
+
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+
+/*Back To Top Section End*/
+
+/* Our Juorney Start */
+.our_journey_sec {
+  background-image: url(../img/aboutPage/our_journey.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 635px;
+  position: relative;
+}
+
+.our_journey_sec h4 {
+  padding: 25px 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.time_line .splide__pagination {
+  visibility: visible !important;
+}
+
+.time_line .splide__arrows {
+  display: none;
+}
+
+.time_line .splide__pagination .splide__pagination__page {
+  border: 4px solid #e0e0e0 !important;
+}
+
+/* Our Journey End */
+
+/* Our People Section */
+.our_people {
+  height: 580px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url(../img/aboutPage/people_bg_img.png);
+  /*  background: linear-gradient(#ffffff, #a3a3a33b); */
+}
+
+.our_people h4 {
+  color: #4F646F;
+}
+
+.zoom {
+  transition: transform 0.9s;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.3);
+  /* IE 9 */
+  -webkit-transform: scale(1.3);
+  /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+.activeZoom {
+  -ms-transform: scale(1.3);
+  /* IE 9 */
+  -webkit-transform: scale(1.3);
+  /* Safari 3-8 */
+  transform: scale(1.3);
+}
+
+.slider_title h4 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.slider_title h6 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.splide__arrow--prev {
+  left: -2em !important;
+  z-index: 99;
+  background-image: url(../img/slider_preview.svg) !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+}
+
+.splide__arrow--next {
+  right: -2em !important;
+  z-index: 99;
+  background-image: url(../img/slider_next.svg) !important;
+  background-color: transparent !important;
+  background-repeat: no-repeat !important;
+}
+
+.arrows_left .splide__arrow--next {
+  left: -8px;
+  top: 63%;
+}
+
+.arrows_left .splide__arrow--prev {
+  left: -8px;
+  top: 47%;
+}
+
+.arrows_right .splide__arrow--next {
+  right: -8px;
+  top: 63%;
+}
+
+.arrows_right .splide__arrow--prev {
+  left: auto;
+  right: -8px;
+  top: 47%;
+}
+
+.splide__arrow {
+  opacity: 1 !important;
+  /* background: linear-gradient(69.35deg, #9351E8 19.25%, #35007A 101.01%) !important; */
+}
+
+.splide__arrow svg {
+  display: none;
+}
+
+.splide__arrow svg path {
+  fill: #fff;
+}
+
+.slider_hov_content {
+  color: #fff;
+  background: linear-gradient(180deg, #9351E8 66.13%, #35007A 100%);
+}
+
+.overlay_bottom {
+  position: relative;
+  width: 100%;
+}
+
+.slider_hov_content {
+  width: 100%;
+  bottom: -50%;
+  position: absolute;
+  padding: 15px 8px;
+  text-align: center;
+  transition: bottom 0.5s ease;
+}
+
+.overlay_bottom:hover .slider_hov_content {
+  display: block;
+  bottom: 0%;
+}
+
+.slider_hov_year {
+  width: 100%;
+  top: -50%;
+  position: absolute;
+  padding: 15px 8px;
+  text-align: center;
+  transition: top 0.5s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider_hov_year p {
+  width: 40%;
+  padding: 10px;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  background: linear-gradient(180deg, #9351E8 0%, #35007A 100%);
+}
+
+.overlay_bottom:hover .slider_hov_year {
+  top: 0%;
+}
+
+/* Our-People Code Start Here */
+.people_name {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.people_name h6 {
+  font-family: 'Crimson Pro';
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.people_name p {
+  font-family: 'Crimson Pro';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Our-People Code Start End */
+.units_title {
+  width: 100%;
+  bottom: -0%;
+  left: 0;
+  position: absolute;
+  padding-top: 20px;
+  text-align: center;
+  transition: bottom 0.5s ease;
+  background: #00000054;
+}
+
+.units_sec {
+  opacity: 0;
+  transition: margin-top 0.5s ease;
+}
+
+.overlay_bottom:hover .units_title {
+  opacity: 1;
+  bottom: 0;
+  background: #00000054;
+}
+
+.overlay_bottom:hover .units_sec {
+  margin-top: 30%;
+  opacity: 1;
+}
+
+.units_title p {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 33px;
+  text-transform: uppercase;
+  color: #D0B6F7;
+}
+
+.units_title span {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #D0B6F7;
+}
+
+.units_sec {
+  display: flex;
+  justify-content: space-between;
+}
+
+.units_sec .unit_name {
+  width: 45%;
+  padding: 13px 10px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #9351E8 0%, #35007A 100%);
+}
+
+.units_sec .unit_name img {
+  width: 20%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.units_sec .unit_name p {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.slider_hov_content h5 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__pagination {
+  visibility: hidden !important;
+}
+
+.commit_sec .splide__arrows {
+  display: none;
+}
+
+.commit_sec .splide__pagination {
+  justify-content: end;
+  padding: 0 4% !important;
+  visibility: visible !important;
+  bottom: 3%;
+}
+
+.splide__pagination__page {
+  background: #3d0783 !important;
+  border: 4px solid #fff !important;
+  height: 13px !important;
+  width: 13px !important;
+}
+
+.splide__slide {
+  padding: 8px;
+}
+
+.splide--ttb>.splide__pagination {
+  right: 1.5em !important;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
+.right_slider {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: end;
+}
+
+/* Popup Code Start */
+.profile_popup {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.popup_sec {
+  padding: 10% 11%;
+}
+
+.popup-content {
+  background: #EFEFEF;
+  margin: 13% 0;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 65%;
+  position: relative;
+}
+
+.leftTo_right .close_btn {
+  right: 25px;
+}
+
+.leftTo_right {
+  margin-right: auto;
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(-0);
+  }
+}
+
+.rightTo_left {
+  margin-left: auto;
+  animation: slideInRight 0.5s ease-in-out;
+}
+
+.rightTo_left .close_btn {
+  left: 25px;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.close_btn {
+  position: absolute;
+  top: 24px;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.close_btn img {
+  width: 75%;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.profil_info h3 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.profil_info h5 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.profil_info p {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.profil_info span {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+}
+
+/* Popup Code End */
+/* Our People End */
+
+/* The MSS Start */
+.tmss {
+  background-image: url(../img/aboutPage/mss_bg_img.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 480px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.rotate_img img {
+  position: absolute;
+  top: -10%;
+  left: -5%;
+  width: 13%;
+  height: 150px;
+  border-radius: 50%;
+  animation: animName 7s linear infinite;
+}
+
+@keyframes animName {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tmss span {
+  position: absolute;
+  top: 15px;
+  left: -24px;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.at_a_glance_sec img {
+  left: -3%;
+}
+
+.at_a_glance_sec span {
+  position: absolute;
+  top: 15px;
+  left: -2px;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.tmss .tmss_card {
+  background: #D0B6F7;
+}
+
+.tmss_card h5 {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.tmss p {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.tmss p::first-letter {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000;
+}
+
+.mission_title h4 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.vission_container {
+  background: #EFE4FF;
+  display: flex;
+  border-radius: 5px;
+}
+
+.vision_sec h5 {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  color: #000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.vision_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(180deg, #9351E8 0%, #35007A 100%); */
+}
+
+.vision_img img {
+  width: 50%;
+}
+
+.icon_with_txt {
+  display: flex;
+  align-items: start;
+}
+
+.icon_with_txt img {
+  width: 15%;
+  padding: 12px;
+}
+
+.icon_with_txt P {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  padding: 12px;
+}
+
+.icon_with_txt P::first-letter {
+  font-weight: 600;
+  font-size: 26px;
+}
+.mission_content p{
+  margin: 0;
+}
+.no_bg_img{
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; 
+}
+.no-1{
+  background-image: url(../img/at_a_glance/mission-1.png); 
+}
+.no-2{
+  background-image: url(../img/at_a_glance/mission-2.png); 
+}
+.no-3{
+  background-image: url(../img/at_a_glance/mission-3.png); 
+}
+.no-4{
+  background-image: url(../img/at_a_glance/mission-4.png); 
+}
+.no-5{
+  background-image: url(../img/at_a_glance/mission-5.png); 
+}
+.no-6{
+  background-image: url(../img/at_a_glance/mission-6.png); 
+}
+.no-7{
+  background-image: url(../img/at_a_glance/mission-7.png); 
+}
+.no-8{
+  background-image: url(../img/at_a_glance/mission-8.png); 
+}
+/* Our Impact Start */
+.impact_slider {
+  position: relative;
+}
+
+.cards {
+  width: 85%;
+  padding: 25% 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #D9D9D9;
+  border-radius: 5px;
+}
+
+.cards .count {
+  text-align: center;
+}
+
+.count_numb {
+  display: flex;
+  align-items: center;
+}
+
+.cards .count h4 {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.cards .count p {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+/* Campus Start*/
+.video-container {
+  width: 640px;
+  border-radius: 4px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 8px 20px rgba(black, 0.4);
+}
+
+.video_sec {
+  position: relative;
+}
+
+video {
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.play-button-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+#circle-play-b {
+  cursor: pointer;
+}
+
+.play-gif svg {
+  fill: #fff;
+  stroke: #fff;
+  cursor: pointer;
+  background-color: rgba(black, 0.2);
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+/* Capuse End */
+/* Our Impact End */
+
+/* The MSS End */
+/* Our Founder Section */
+/* Border With Card Section Start */
+.border_sec {
+  padding: 50px;
+  background-color: #D0B6F7;
+}
+
+.border_card_img {
+  width: 100%;
+}
+
+.flip_card {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  perspective: 500px;
+}
+
+.flip_card_content {
+  position: absolute;
+  width: 100%;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip_card:hover .flip_card_content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.flip_card_front,
+.flip_card_back {
+  position: absolute;
+  width: 100%;
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px 10px;
+  backface-visibility: hidden;
+}
+
+.flip_card_back {
+  color: #000;
+  transform: rotateY(180deg);
+}
+
+.flip_card_front h6,
+.flip_card_back h6 {
+  font-size: 14px;
+}
+
+.flip_card_front p {
+  font-size: 15px;
+  margin-bottom: 0;
+  line-height: 30px;
+}
+
+.flip_card_back p {
+  font-size: 15px;
+  margin-bottom: 0;
+  line-height: 21px;
+}
+
+/* Border With Card Section End*/
+/* ======================================= About Page End */
+
+/* ======================================= Prem Vihar Start =========================================== */
+.unit_hgl_card {
+  padding: 25px;
+  border-radius: 7px;
+}
+
+.unit_hgl_card img {
+  width: 75%;
+}
+
+.hgl_card_1 {
+  text-align: center;
+  background: #FFCDB1;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hgl_card_2 {
+  background: #DBE5FF;
+}
+.hgl_card_3{
+  background: #FBCAC7;
+}
+.hgl_card_4{
+  background: #D0B6F7;
+}
+.hgl_card_5{
+  background: #F6FFBE;
+}
+.hgl_card_1_count{
+  margin: 40px 0 0;
+}
+
+.hgl_card_1_count h5 {
+  color: #000;
+  font-family: 'Old Standard TT';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.hgl_card_1_count span {
+  color: #000;
+  font-family: 'OCR-B 10 BT';
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.hgl_small_card {
+  display: flex;
+  padding: 25px;
+  border-radius: 7px;
+  justify-content: space-between;
+}
+
+.hgl_small_card img {
+  width: 20%;
+}
+
+.first_letter p::first-letter {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.poss_relat {
+  position: relative;
+  width: 100%;
+}
+
+.overlayImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(147, 81, 232, 0.6) 0%, rgba(53, 0, 122, 0.6) 100%);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.poss_relat:hover .overlay_content {
+  height: 100%;
+}
+
+.overlay_content .ovelay_icon_txt {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay_content .ovelay_icon_txt h6 {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.overlay_content .ovelay_icon_txt p {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+  /* letter-spacing: 0.02em; */
+  color: #FFFFFF;
+}
+
+.ovelay_icon_txt img {
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+/* Gallery Section Start*/
+.gallery_sec {
+  display: flex;
+  overflow: hidden;
+  height: 50vw;
+  background: #fff;
+}
+
+.gallery_sec:hover img {
+  opacity: 0.5;
+}
+
+.past_gallery,
+.present_gallery,
+.feature_gallery {
+  padding: 8px !important;
+}
+
+.gallery_sec img {
+  max-width: 100%;
+  vertical-align: middle;
+  border: none;
+  box-sizing: border-box;
+  transition: opacity 0.2s;
+}
+
+.gallery_sec img:hover {
+  opacity: 1;
+}
+
+.gallery_sec .column {
+  -webkit-animation: var(--animation, none) 16s infinite linear;
+  animation: var(--animation, none) 16s infinite linear;
+}
+
+.gallery_sec .column:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.gallery_sec .column:nth-of-type(odd) {
+  align-self: flex-end;
+  --direction: 50%;
+}
+
+@-webkit-keyframes slide {
+  to {
+    transform: translateY(var(--direction, -50%));
+  }
+}
+
+@keyframes slide {
+  to {
+    transform: translateY(var(--direction, -50%));
+  }
+}
+
+/*  */
+/* Gallery Section End */
+.events h4 {
+  color: #4F646F;
+}
+
+/* Prem Vihar End */
+
+/* Our Commitments Start */
+.commit_sec {
+  padding: 50px;
+  position: relative;
+}
+
+.in_arts {
+  background-color: #FFEECE;
+}
+
+.in_social {
+  background-color: #FBF9C7;
+}
+
+.in_education {
+  background-color: #FFD6D6;
+}
+
+.in_sports {
+  background-color: #DEFFFF;
+}
+
+.img_container {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 480px;
+}
+
+.img_arts {
+  background-image: url(../img/our_commit/arts.jpg);
+}
+
+.img_social {
+  background-image: url(../img/our_commit/social.jpg);
+}
+
+.img_education {
+  background-image: url(../img/our_commit/education.jpg);
+}
+
+.img_sports {
+  background-image: url(../img/our_commit/sports.jpg);
+}
+
+.img_heilight_card {
+  width: 100%;
+}
+
+.img_heilight_card_popup {
+  height: 480px;
+  display: flex;
+  align-items: center;
+}
+
+.highlights_bg {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.commit_sec .img_slider_title {
+  top: 5%;
+  right: 50%;
+  position: absolute;
+  transform: translate(50%, -50%);
+}
+
+.commit_sec .img_slider_btn {
+  width: 25%;
+  bottom: -1%;
+  right: 50%;
+  position: absolute;
+  transform: translate(50%, -50%);
+  display: flex;
+}
+
+.commit_detail_page {
+  background: transparent;
+  border-radius: 5px;
+  padding: 7px;
+  font-family: 'Crimson Pro' !important;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  margin: 0 10px;
+  color: #000 !important;
+  border: 1px solid #d0b6f7;
+}
+
+.commit_detail_page:hover {
+  background-color: #d0b6f7;
+}
+
+.side_txt {
+  display: flex;
+  align-items: center;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -16%;
+  top: 47%;
+  text-align: center;
+  justify-content: center;
+}
+
+.art_bar {
+  left: -16%;
+}
+
+.social_causes_bar {
+  left: -19%;
+}
+
+.education_bar {
+  left: -18%;
+}
+
+.sports_bar {
+  left: -17%;
+}
+
+.commit_sec h5 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.commit_sec h4 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 23px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.side_text_bar {
+  width: 70%;
+}
+
+.social_popup {
+  display: none;
+}
+
+.edu_popup {
+  display: none;
+}
+
+.art_popup {
+  display: none;
+}
+
+.sports_popup {
+  display: none;
+}
+
+.img_content {
+  padding: 18px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.img_content p {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.heilight_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.heilight_cards .heilight_txt {
+  width: 100%;
+  text-align: center;
+  margin: 16px 8px;
+  padding: 50px 8px;
+  border-radius: 5px;
+}
+
+.light_org {
+  background-color: #FFF5E9;
+}
+
+.light_yellow {
+  background-color: #FBF9C7;
+}
+
+.light_pink {
+  background-color: #FFD6D6;
+}
+
+.light_green {
+  background-color: #DEFFFF;
+}
+
+.heilight_cards .heilight_txt h4 {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.064em;
+  color: #AEAEAE;
+  margin-top: 10px;
+}
+
+.heilight_cards .heilight_txt p {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #AEAEAE;
+}
+
+/* Our Commitments End */
+/* At A Glance Code */
+.campuses_cont {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0) 100%);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.poss_relat:hover .campuses_cont {
+  height: 100%;
+}
+
+.campuses_cont .campuses_txt {
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 50px !important;
+  text-align: start !important;
+}
+
+.campuses_cont .campuses_txt h4 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.campuses_cont .campuses_txt h6 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-align: start;
+}
+
+.at_a_glance_sec {
+  display: flex;
+  justify-content: center;
+}
+
+.at_a_glance_card {
+  position: absolute;
+  bottom: -95px;
+  background: #D0B6F7;
+  border-radius: 5px;
+}
+.is-prev{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.is-prev .poss_relat{
+  height: 85%;
+}
+.is-next{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.is-next .poss_relat{
+  height: 85%;
+}
+/* At A Glance Code End */
+/* Our People Code Start  */
+
+/* Our People Hover Card Code Start */
+
+.crd_ef_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+
+.crd_ef_container .card_effect {
+  position: relative;
+  max-width: 30%;
+  height: 250px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.crd_ef_container .card_effect:hover {
+  height: 320px;
+}
+
+.crd_ef_container .card_effect .image {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  top: -25%;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.crd_ef_container .card_effect .image img {
+  width: 100%;
+  height: auto;
+}
+
+.crd_ef_container .card_effect .crd_ef_content {
+  position: relative;
+  top: -115px;
+  padding: 0px 15px;
+  color: #111;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
+}
+
+.crd_ef_container .card_effect:hover .crd_ef_content {
+  margin-top: 0px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+
+}
+
+.crd_ef_container .card_effect:hover .image {
+  top: -50%;
+}
+
+/* Our People Hover Card Code End */
+.people_detail {
+  background-color: #fff;
+}
+
+.early_bgImg {
+  background-image: url(../img/aboutPage/benefators_img.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 635px;
+  display: flex;
+  align-items: center;
+}
+
+.early_bgImg .bg_color {
+  background: rgba(53, 0, 122, 0.78);
+
+  height: 629px;
+  display: flex;
+  align-items: center;
+}
+
+.early_content {
+  margin-left: auto;
+  color: #fff;
+}
+
+.early_content .h4 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.mss_btn {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  background: #9351E8;
+  border-radius: 5px;
+  border: none;
+  padding: 3px 10px;
+}
+
+.bg_card_section {
+  background-color: #EFE3FF;
+}
+
+.slider_hov_content_grid2 {
+  color: #fff;
+  background: linear-gradient(180deg, #9351E8 66.13%, #35007A 100%);
+}
+
+.overlay_bottom_grid2 {
+  position: relative;
+  width: 100%;
+}
+
+.slider_hov_content_grid2 {
+  width: 100%;
+  bottom: -25%;
+  position: absolute;
+  padding: 8px;
+  text-align: center;
+  transition: bottom 0.5s ease;
+  z-index: -1;
+}
+
+.overlay_bottom_grid2:hover .slider_hov_content_grid2 {
+  display: block;
+  bottom: 0%;
+  z-index: 9;
+}
+
+.slider_hov_content_grid2 h5 {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.slider_hov_content_grid2 p {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+
+
+/* People Tab View Code Start */
+.tab-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tab_title {
+  margin-right: 20px;
+}
+
+.tab_title h5 {
+  margin-top: 5px;
+  margin-bottom: 13px;
+  font-family: 'Crimson Pro';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+.tab-menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.tab-button img {
+  max-width: 100%;
+}
+
+.tab-button span {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: 'Crimson Pro';
+}
+
+.active span {
+  color: #9351E8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+.hide_img{
+  visibility: hidden;
+}
+.tab_active_img {
+  visibility: hidden;
+}
+
+.active .tab_active_img {
+  visibility: visible;
+}
+
+/* In The New Code Start */
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__slide {
+  opacity: 0.6;
+}
+
+.splide__slide.is-active {
+  height: auto !important;
+}
+
+.new-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-title h4 {
+  color: #4F646F;
+  font-family: 'Perpetua Titling MT';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+/* People Tab View Code End */
+/* Our People Code End */
+
+/* Our Commitment Sub Pages Code */
+.unit_card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.unit_card_container .box {
+  position: relative;
+
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 30px;
+  transition: 0.5s;
+}
+
+.unit_card_container .box::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50%;
+  height: 100%;
+  text-decoration: none;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+}
+
+.unit_card_container .box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50;
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  border-radius: 8px;
+  transform: skewX(15deg);
+  transition: 0.5s;
+  filter: blur(30px);
+}
+
+.unit_card_container .box:hover:before,
+.unit_card_container .box:hover:after {
+  transform: skewX(0deg);
+  width: calc(100% - 100px);
+
+}
+
+.unit_card_container .box:before,
+.unit_card_container .box:after {
+
+  background: linear-gradient(180deg, #9351E8 0%, #35007A 100%);
+}
+
+/* 
+.unit_card_container .box:nth-child(2):before,
+.unit_card_container .box:nth-child(2):after
+{
+  background: linear-gradient(315deg, #03a9f4, #ff0058)
+}
+
+.unit_card_container .box:nth-child(3):before,
+.unit_card_container .box:nth-child(3):after
+{
+  background: linear-gradient(315deg, #4dff03, #00d0ff)
+} */
+
+.unit_card_container .box span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.unit_card_container .box span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.1s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08)
+}
+
+.unit_card_container .box:hover span::before {
+  top: -50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  background-image: url(../img/premVihar/card_thumb_1.png);
+}
+
+.unit_card_container .box span::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s;
+  animation: animate 2s ease-in-out infinite;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  animation-delay: -1s;
+}
+
+.unit_card_container .box:hover span:after {
+  bottom: -50px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  background-image: url(../img/premVihar/card_thumb_2.png);
+  background-repeat: no-repeat;
+
+}
+
+@keyframes animate {
+
+  0%,
+  100% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translate(-10px);
+  }
+}
+
+.unit_card_container .box .content3d {
+  position: relative;
+  left: 0;
+  /* background: rgba(255, 255, 255, 0.05); */
+  /*  backdrop-filter: blur(10px); */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1;
+  transform: 0.5s;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 350px;
+}
+
+.unit_1 {
+  background-image: url(../img/premVihar/units_img_1.png);
+}
+
+.unit_2 {
+  background-image: url(../img/premVihar/units_img_2.png);
+}
+
+.cont-txt {
+  visibility: hidden;
+  height: 350px;
+  padding: 40px 20px;
+  background: #00000082;
+  border-radius: 8px;
+}
+
+.unit_card_container .box:hover .cont-txt {
+  visibility: visible;
+}
+
+.bottom_title {
+  position: absolute;
+  bottom: 20px;
+}
+
+.unit_card_container .box:hover .bottom_title {
+  display: none;
+}
+
+.unit_card_container .box .content3d h2 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  padding: 0 20px;
+
+}
+
+.unit_card_container .box .content3d p {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.02em;
+  text-transform: lowercase;
+  color: #FFFFFF;
+}
+
+.unit_card_container .box .content3d a {
+  display: inline-block;
+  font-size: 12px;
+  color: #111;
+  background: transparent;
+  padding: 4px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.unit_card_container .box .content3d a:hover {
+  background: linear-gradient(180deg, #9351E8 0%, #35007A 102.13%);
+  border: 1px solid rgb(75 47 112);
+  box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+}
+
+.got_web_btn {
+  text-align: center;
+}
+
+/* Our Commitment Sub Pages Code */
+
+/* Footer Section Code Start */
+footer {
+  color: #FFF;
+}
+
+.footer_bg {
+  background: #363636;
+  padding: 0 50px;
+}
+
+.sub_footer_bg {
+  background: #000;
+  padding: 0 50px;
+}
+
+.footer_section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.footer_section h1 {
+  margin-top: 20px;
+  font-weight: 700;
+  font-family: 'Perpetua Titling MT';
+}
+
+.footer_section h5 {
+  font-family: 'Perpetua Titling MT';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.footer_section li {
+  padding: 5px 0;
+}
+
+.sub_footer {
+  padding: 10px 0;
+}
+
+.sub_footer p {
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer_section .location {
+  text-align: end;
+  font-family: 'Crimson Pro';
+}
+
+.sub_footer .footer_icons {
+  margin-top: 10px;
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub_footer .footer_icons-right {
+  margin-left: auto;
+}
+
+.footer_icons img {
+  width: 15%;
+}
+
+/* Footer Section Code End */
+
+@media (min-width: 1920px) {
+  .commit_sec .splide__track .splide__list {
+    display: flex !important;
+  }
+
+  .art_bar {
+    left: -11% !important;
+  }
+
+  .social_causes_bar {
+    left: -13% !important;
+  }
+
+  .education_bar {
+    left: -225px !important
+  }
+
+  .sports_bar {
+    left: -215px !important;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .art_bar {
+    left: -15%;
+  }
+
+  .social_causes_bar {
+    left: -18%;
+  }
+
+  .education_bar {
+    left: -17%;
+  }
+
+  .sports_bar {
+    left: -16%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page_title {
+    max-width: 1266px !important;
+  }
+
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+
+  .dropdown {
+    position: unset !important;
+  }
+
+  .dropdown-menu {
+    width: 100% !important;
+    left: 0;
+    display: flex !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: opacity 0.5s ease !important;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    padding: 8px 50px;
+    opacity: 1 !important;
+    top: 100%;
+    visibility: visible !important;
+  }
+
+  .dropdown .nav_active_bar {
+    visibility: hidden;
+  }
+
+  .dropdown:hover .nav_active_bar {
+    visibility: visible;
+  }
+
+  .active_menu .nav_active_bar {
+    visibility: visible;
+  }
+
+  .btom_active_bar {
+    visibility: hidden !important;
+  }
+
+  .nav_content {
+    padding: 30px 5% 30px 12px;
+  }
+
+  .nav_content h5 {
+    font-family: 'Perpetua Titling MT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin: 10px 0;
+  }
+
+  .nav_menus_list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: padding-left 0.5s;
+  }
+
+  .dropdown-item:focus {
+    background: transparent !important;
+  }
+
+  .nav_menus_list li:hover {
+    padding-left: 20px;
+  }
+
+  .nav_menus_list li a {
+    font-family: 'Old Standard TT';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #000000 !important;
+  }
+
+  .nav_menus_list li .menu_arrow {
+    margin-left: 5px;
+  }
+
+  .founder_sub_menus {
+    display: none;
+  }
+
+  .sir_mutha_nav_img {
+    display: none;
+  }
+
+  .andal_nav_img {
+    display: none;
+  }
+  .rao_nav_img{
+    display: none;
+  }
+  .prema_nav_img {
+    display: none;
+  }
+
+  /* Our Commitments */
+  .commit_sub_menus {
+    display: none;
+  }
+
+  .smvrh_nav_img {
+    display: none;
+  }
+
+  .conertHall_nav_menu:hover .smvrh_nav_img {
+    display: block;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .container_space{
+    padding: 20px;
+  }
+  .mob_flex_center {
+    justify-content: center;
+  }
+
+  .premvihar_border_color {
+    height: 150px;
+    bottom: 3% !important;
+  }
+}
+
+
+/* ==================== About US Page End============================== */
+
+/* ======================== vishwajith============================== */
+
+.detail_page_list {
+  list-style: none;
+  font-family: Old Standard TT;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: justified;
+  margin-left: 10%;
+}
+
+.detail_page_list::before {
+  content: "\25B8";
+  margin-right: 5px;
+}
+
+
+
+/* ==================== At a glance section start ===================== */
+.at_a_glance {
+  margin-bottom: 51px;
+}
+
+.glance-banner {
+  background-image: url("../img/aboutPage/at_a_glance_banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 756px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px 25px 0px;
+}
+
+.at_a_glance_logo {
+  position: absolute;
+  top: 0%;
+}
+
+.glance-title {
+  position: relative;
+}
+
+.glance-title h4 {
+  color: #FFF;
+  text-align: right;
+  font-family: Perpetua Titling MT;
+  font-size: 32px;
+  padding: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.glance-banner-img {
+  border-radius: 7px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.about-btn {
+  margin: 17px 0px 0px 0px;
+  border-radius: 5px;
+  border: 2px solid #D0B6F7;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Crimson Pro';
+  font-size: 16px;
+  background-color: unset;
+  font-style: normal;
+  font-weight: 400;
+  width: 169px;
+  height: 42px;
+  flex-shrink: 0;
+  line-height: normal;
+  /* padding: 15px; */
+}
+
+.about-btn:hover {
+  background-color: #D0B6F7;
+}
+
+.icon_with::first-letter {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.in_the_glance_p p {
+  color: #FFF !important;
+}
+
+
+/* ===================== At a glance section end ====================== */
+
+
+/* =============== news and media starting ================ */
+
+.news_banner_bg {
+  background-image: url("../img/in_the_news/newspaper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 482px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-title {
+  color: #FFFCF9;
+  text-align: center;
+  font-family: 'Perpetua Titling MT';
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.back_arrow {
+  position: absolute;
+  left: 6%;
+  cursor: pointer;
+}
+
+.sub-title {
+  color: #000;
+  font-family: 'Old Standard TT';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.title2 {
+  color: #000;
+  text-align: center;
+  font-family: 'Perpetua Titling MT';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.more-link {
+  color: #9351E8 !important;
+  font-size: 21px;
+  /* font-style:normal; */
+  font-weight: 550;
+}
+
+.center_line {
+  width: 2px;
+  background-color: black;
+}
+
+.in_the_news_p p {
+  color: #000;
+  font-family: 'Old Standard TT';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.32px;
+}
+
+.bottom_top_arrow {
+  float: right;
+  right: 55px;
+  position: fixed;
+  bottom: 55px;
+  z-index: 22;
+  cursor: pointer;
+}
+
+.icon_with:nth-child(1)::first-letter {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.height107 {
+  height: 97px;
+}
+
+.news_para_group1 {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+  #news_para_group {
+    display: none !important;
+  }
+
+  .news_para_group1 {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* =============== news and media end ============= */
+/* =============== Events Page =====================*/
+.dot_border{
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  border-top-style: dashed;
+  border-bottom-style: dashed;
+  padding: 1px 0;
+}
+.splide--nav>.splide__track>.splide__list>.splide__slide.is-active{
+  border: none!important;
+}
+.event_detail {
+  background-color: #545454;
+}
+.event_detail .splide__arrows .splide__arrow--prev{
+  left: 1em !important;
+}
+.event_detail .splide__arrows .splide__arrow--next{
+  right: 1em !important;
+}
+.event_detail .splide__track{
+  width: 90%;
+  margin: auto;
+}
+.event_video  .splide__slide{
+  padding: 0!important;
+}
+.event_video .video_bg{
+  padding: 30px 50px;
+  background-color: #000;
+}
+/* =============== Events Page End =====================*/
+/*================ News And Media =======================*/
+.milestone_img{
+  background-image: url("../img/the_new/milestone_bg.png");
+}
+.milestone_img .bgFull_img_bg_color{
+  bottom: -13%;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.10);
+}
+.news_highlight_content h6{
+  color: #000;
+  font-family: 'Old Standard TT';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.32px;
+}
+.news_highlight_content h5{
+  text-transform: uppercase;
+}
+.news_highlight_content .about-btn{
+  color: #000;
+}
+.hlgt_img_title h5{
+  color: #000;
+  font-family: 'Crimson Pro';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.black_btn{
+  margin: 17px 0px 0px 0px;
+  border-radius: 5px;
+  border: 2px solid #D0B6F7;
+  color: #000;
+  text-align: center;
+  font-family: 'Crimson Pro';
+  font-size: 16px;
+  background-color: unset;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 20px;
+  flex-shrink: 0;
+  line-height: normal;
+}
+.white_btn{
+  margin: 17px 0px 0px 0px;
+  border-radius: 5px;
+  border: 2px solid #D0B6F7;
+  color: #fff;
+  text-align: center;
+  font-family: 'Crimson Pro';
+  font-size: 16px;
+  background-color: unset;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 20px;
+  flex-shrink: 0;
+  line-height: normal;
+}
+.black_btn:hover{
+  background-color:#D0B6F7;
+}
+.white_btn:hover{
+  color: #000;
+  background-color:#D0B6F7;
+}
+.bgFull_img {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  min-height: 480px;
+  position: relative;
+}
+#hlgt_pageImage-1{
+  background-image: url("../img/the_new/hlgt-1.png");
+  position: sticky;
+  width: 100%;
+  top: 13%;
+  z-index: -1;
+}
+#hlgt_pageImage-2{
+  background-image: url("../img/the_new/hlgt-2.png");
+}
+#hlgt_pageImage-3{
+  background-image: url("../img/the_new/hlgt-3.png");
+}
+
+.vertical_title{
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 50%;
+  text-align: center;
+}
+.hlgt_bg_color{
+  padding: 50px;
+  background: #4F646F;
+  position: sticky;
+  width: 100%;
+  top: 12%;
+  z-index: 11;
+}
+.hlgt_last_img{
+  position: sticky;
+  width: 100%;
+  top: 20%;
+  z-index: 12;
+}
+.hlgt_bg_color{
+  color: #fff;
+}
+.hlgt_bg_color h5{
+  color: #fff;
+}
+#hlgt_pageImage-3,#hlgt_pageImage-3 h5{
+  color: #fff;
+}
+
+/*=========================== News & Media End =======================*/
+/*=========================== Key Initiative Start =======================*/
+.prjt_min_sec{
+  background-image: url(../img/key_initiative/project_main-1.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 480px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.project-title{
+  padding: 16px 0;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  background-color: #4F646F;
+}
+.project-title h4{
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+}
+.prjt_title_bar{
+  width: 20%;
+}
+.prjt_bg{
+  background-color: #4F646F;
+}
+/* Project Detail Start */
+.project_banner_bg {
+  background-image: url(../img/key_initiative/project-banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 482px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prjt-detail{
+  margin-left: auto;
+}
+.prjt-detail .content_title h5:first-child{
+  color: #9351E8;
+  font-family: 'Perpetua Titling MT';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-right: 7px;
+}
+.detail_card{
+  padding: 8px;
+}
+.card_content{
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 7px;
+}
+.card_content p{
+  margin-bottom: 0;
+}
+.card_content h6{
+  color: #000;
+  font-family: 'Crimson Pro';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  margin: 10px 0;
+}
+.detail_cardBg_1{
+  background-color: #FFEDEC;
+}
+.detail_cardBg_2{
+  background-color: #FFFEE3;
+}
+.detail_cardBg_3{
+  background-color: #DBE5FF;
+}
+.detail_img img{
+  height: 100%;
+}
+/* Project Detail End */
+/* ========================= Be A Part Start ======================= */
+.what_we_do_sec{
+  background-image: url('../img/be_a_part/');
+}
+.aPart_link_to h5{
+  text-align: center;
+}
+.aPart_link_to button{
+  width: 50%;
+}
+/*=========================== KeyInitiative End =======================*/
+
+
+/* ================================== Popup Code Start ================== */
+.popupForm{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0 0 0 / 31%);
+  backdrop-filter: blur(8px);
+}
+.form_sec{
+  width: 35%;
+  max-height: 75%;
+  border-radius: 7px;
+  background-color: #fff;
+  transform: translate(0px, 50px);
+  padding: 20px;
+}
+.popupForm h3{
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 23px;
+}
+.form_sec .close_form{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.donateForm{
+  display: none;
+}
+.VolunteerForm{
+  display: none;
+}
+.collabrateForm{
+  display: none;
+}
+
+/* Input Field */
+.group 			  { 
+  position:relative; 
+  width: 75%;
+  margin: 20px auto;
+}
+
+.inputMaterial 				{
+  font-size:14px;
+  width: 100%;
+  padding:7px 7px 7px 5px;
+  display:block;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+
+.inputMaterial:focus 		{ outline:none;}
+
+/* LABEL ======================================= */
+
+label 				 {
+  color:#999; 
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:7px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.inputMaterial:focus ~ label, .inputMaterial:valid ~ label 		{
+  top:-10px;
+  font-size:14px;
+  color: #D0B6F7;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block;}
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background: #D0B6F7; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+/* active state */
+.inputMaterial:focus ~ .bar:before, .inputMaterial:focus ~ .bar:after {
+  width:50%;
+}
+
+/* Error Text*/
+.error-txt {
+  position: absolute;
+  font-family: arial;
+  color: red;
+  font-size: 14px;
+  bottom: -18px;
+  display: none;
+}
+/* .error input {
+  border-bottom: 1px solid red;
+} */
+.error .error-txt {
+  display: block;
+}
+/*hide and show classes css*/
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+/* Input Fields End */
+/* ========================= Careers Start =================== */
+.career_banner{
+  background-image: url(../img/be_a_part/careers_banner.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.career_banner .bg_color{
+  background: rgba(53, 0, 122, 0.78);
+  height: 560px;
+  display: flex;
+  align-items: center;
+}
+.career_content,.career_content h2{
+  color: #fff;
+}
+/* ======================= Join US Dropdown Code =========================== */
+.accordion-dropdown{
+  background: #F2F2F2;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background: transparent!important;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #d0b6f7;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  outline: none;
+}
+.accordion button:focus {
+  cursor: pointer;
+  color: #9747FF;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #9747FF;
+  border: 1px solid #491191;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 22px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #000;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: fit-content;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+.accordion .job-title{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.accordion .jop-position{
+  display: flex;
+}
+.accordion .jop-position p{
+  margin-bottom: 0;
+}
+.accordion .jop-position h5{
+  color: #000;
+  text-align: justify;
+  font-family: 'Old Standard TT';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.32px;
+  margin-bottom: 0;
+}
+.accordion .jop-position p{
+  margin-left: 10px;
+}
+.accordion .jop-position h5:nth-child(2){
+  color: #9747FF;
+  margin-left: 10px;
+}
+.accordion .jop-position .location_icon{
+  display: flex;
+  margin-right: 10px;
+}
+.accordion-content h3{
+  color: #4F646F;
+  text-align: center;
+  font-family: 'Crimson Pro';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  padding: 20px 0 30px 0;
+}
+.accordion-content .job-title{
+  width: 100%;
+  padding:10px 0;
+}
+.accordion-content .job-title .jop-position{
+  width: 100%;
+}
+.accordion-content .job-title .jop-position p{
+  margin-top: 0;
+}
+.accordion_applay{
+  width: 17%;
+  margin: 20px auto;
+}
+.accordion_btn{
+  border-radius: 5px;
+  border: 2px solid #D0B6F7!important;
+  color: #000;
+  text-align: center!important;
+  font-family: 'Crimson Pro';
+  font-size: 16px;
+  background-color: unset;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px 20px!important;
+  flex-shrink: 0;
+  line-height: normal;
+}
+#careerForm{
+  display: none;
+}
+
+/* ======================================================== */
+#upload-button {
+  padding: 10px;
+  color: white;
+  background: #D0B6F7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#upload-button:hover {
+  background-color: #6428b1;
+}
+
+#upload-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+/* ========================= Careers End =================== */
+
+/* ========================= Contact Us Start ==================== */
+.contact_banner{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 482px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../img/be_a_part/contact_banner.png');
+}
+/* ========================= Contact Us End ====================  */
+/* ========================= Notable Alumni Start =================*/
+.alumni_bg{
+  background: #888;
+}
+.alumni-img{
+  text-align: center;
+}
+.alumni-img img{
+  height: 100%;
+  padding: 8px;
+}
+.alumni_bg h4{
+  color: #FFF;
+  text-align: center;
+  font-family: Perpetua Titling MT;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+/* ========================= Notable Alumni Start =================*/
+
+
+/* ================= Previhar detail page start ============== */
+
+.premvihar_banner {
+  background-image: url("../img/premvihar_detail/premvihar_banner.jpg");
+}
+
+.premvihar_title_banner {
+  border-radius: 7px;
+  width: 100%;
+  /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.section_banner {
+  background-image: url("../img/premvihar_detail/subtitle3_banner.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  min-height: 400px;
+  /* margin-top: 3% !important; */
+  margin: 3% 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.premvihar_sub_3 {
+  width: 98%;
+}
+
+.premvihar_sub_4 {
+  border-radius: 7px;
+  background: rgba(247, 241, 182, 0.46);
+  display: grid;
+  width: 99%;
+  height: 100%;
+  padding: 50px;
+  justify-content: center;
+}
+
+.premvihar_sub_5 {
+  background: rgba(208, 182, 247, 0.21);
+}
+
+.premvihar_sub_4>div>img {
+  border-radius: 10px;
+
+}
+
+.premvihar_border_color {
+  position: absolute;
+  bottom: 2%;
+  z-index: -1;
+}
+
+/* ================== Previhar detail page End =============== */
+
+
+/* ============== About Founder Sir Mutha Page Start ========= */
+
+.afsm_bg_banner {
+  background-image: url('../img/about_founder_sirMutha/top_banner_about_founder_sirmutha.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 695px;
+  flex-shrink: 0;
+}
+.afsm_title{
+  color: #FFF;
+text-align: center;
+font-family: Perpetua Titling MT;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.empty_section {
+  width: 8%;
+}
+
+.afsm_section2 {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section3_grid {
+  gap: 20px;
+ /* grid-template-rows: 456px; */
+}
+
+.afsm_section2 img {
+  cursor: pointer;
+}
+
+.afsm_profile {
+  position: absolute;
+  top: -30%;
+  text-align: center;
+}
+
+.afsm_box div {
+  text-align: center;
+}
+
+.afsm_section3 {
+  width: 100% !important;
+  max-height: 501px !important;
+}
+.vertical-grid{
+  display: grid;
+  grid-template-rows: minmax(1fr 200px);
+  row-gap: 20px;
+}
+
+.mt11 {
+  margin-top: 11% !important;
+}
+
+.afsm_section4_img {
+  column-gap: 25px;
+}
+
+.section4_img {
+  width: 100%;
+  max-height: 225px;
+}
+
+.img-fluid:hover+.hover_card,
+.hover_card:hover {
+  visibility: visible;
+}
+
+.bbrl {
+  border-bottom-left-radius: 7px !important;
+}
+
+.bbrr {
+  border-bottom-right-radius: 7px !important;
+}
+
+.hover_card {
+  width: 100%;
+  height: 193.358px;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+  justify-content: center;
+  align-items: end;
+  display: flex;
+  visibility: hidden;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0px;
+}
+.hover_card p {
+  padding: 15px;
+  text-align: center;
+}
+
+
+@media screen and (max-width:480px){
+ 
+  .afsm_bg_banner {
+    height: 600px;}
+  .afsm_profile  {
+    position: absolute;
+    top: 8%;color: #ffffff;
+    text-align: center;
+}
+.hover_card {
+  height: 50px;}
+}
+
+/* =============== About Founder Sir Mutha Page End ========== */

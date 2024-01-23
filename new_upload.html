@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Madras Seva Sadan</title>
+
+    <link rel="stylesheet" href="./css/mss.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    
+
+
+</head>
+<body>
+
+<!-- ==================== Start Loading ==================== -->
+     <div id="loading" class="loading-container">
+      <div class="flex_center height100">
+        <div class="waviy text-center">
+          <span style="--i:1">T</span>
+          <span style="--i:2">H</span>
+          <span style="--i:3; margin-right:5px;">E</span>
+          <span style="--i:4">M</span>
+          <span style="--i:5">A</span>
+          <span style="--i:6">D</span>
+          <span style="--i:7">R</span>
+          <span style="--i:8">A</span>
+          <span style="--i:9; margin-right:5px;">S</span>
+          <span style="--i:10">S</span>
+          <span style="--i:11">E</span>
+          <span style="--i:12">V</span>
+          <span style="--i:13; margin-right:5px;">A</span>
+          <span style="--i:14">S</span>
+          <span style="--i:15">A</span>
+          <span style="--i:16">D</span>
+          <span style="--i:17">A</span>
+          <span style="--i:18">N</span>
+       
+         </div>
+      </div>
+     </div>
+    <!-- ==================== End Loading ==================== -->
+
+     <!-- ==================== Start Loading ==================== -->
+    <div id="loading" class="loading-container">
+        <!-- <div class="loading-spinner"></div> -->
+      </div>
+      
+    <!-- ==================== End Loading ==================== -->
+
+     <!-- ==================== Start Main Container ==================== -->
+    <section class="main_container">
+   
+    
+
+
+
+        <input type="file" id="image-input">
+
+
+      
+    </section>
+    <!-- ==================== End Main Container ==================== -->
+
+    
+    <!-- ==================== Scrip Code ================================= -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2.2.2/dist/tesseract.js"></script>
+<script>
+  $(document).ready(function() {
+      Tesseract.initialize({
+        workerPath: 'https://cdn.jsdelivr.net/npm/tesseract.js@2.2.2/dist/worker.min.js',
+        langPath: 'https://cdn.jsdelivr.net/npm/tesseract.js@2.2.2/langs/',
+        corePath: 'https://cdn.jsdelivr.net/npm/tesseract.js-core@2.2.2/index.js'
+      });
+
+      $('#image-input').on('change', function(event) {
+        const file = event.target.files[0];
+        const reader = new FileReader();
+
+        reader.onload = function() {
+          const imageData = reader.result;
+          recognizeText(imageData);
+        }
+
+        reader.readAsDataURL(file);
+      });
+
+      function recognizeText(imageData) {
+        Tesseract.recognize(imageData)
+          .then(function(result) {
+            const text = result.data.text;
+            alert(text);
+          })
+          .catch(function(error) {
+            console.error(error);
+          });
+      }
+    });
+</script>
+</body>
+</html>
